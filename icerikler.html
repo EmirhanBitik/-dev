@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yazılım Araçları Rehberi | İçerikler</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="site-name" href="index.html">Yazılım Araçları Rehberi</a>
+    <nav class="site-nav" aria-label="Ana menü">
+      <ul>
+        <li><a href="index.html">Ana Sayfa</a></li>
+        <li><a href="icerikler.html" aria-current="page">İçerikler</a></li>
+        <li><a href="hakkinda.html">Hakkında</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Araçlar</h1>
+    <p>Aşağıda yazılım geliştirme sürecinde sık kullanılan beş araç yer alıyor. Her kart aracın ne işe yaradığını, hangi kategoride olduğunu ve bir örnek görevde nasıl kullanılabileceğini gösterir. Aradığınız aracı bulmak için başlığa göre arama yapabilirsiniz.</p>
+
+    <section class="search-panel" aria-labelledby="arama-baslik">
+      <h2 id="arama-baslik">Başlığa göre ara</h2>
+      <div role="search">
+        <label for="arama-kutusu">Araç adını yazın</label>
+        <div class="search-row">
+          <input type="text" id="arama-kutusu" autocomplete="off" placeholder="Örneğin: git, postman">
+          <button type="button" id="temizle">Temizle</button>
+        </div>
+      </div>
+      <p class="sayac" id="sayac" role="status" aria-live="polite">5 sonuç gösteriliyor</p>
+      <p class="bos-sonuc" id="bos-sonuc" hidden>Aramanızla eşleşen araç bulunamadı. Farklı bir kelime deneyin.</p>
+    </section>
+
+    <ul class="card-list" id="kart-listesi">
+      <li class="card">
+        <h2>Visual Studio Code</h2>
+        <p>Microsoft tarafından geliştirilen, eklentilerle genişletilebilen ücretsiz bir kod editörüdür.</p>
+        <p class="meta"><span>Kategori:</span> Kod editörü</p>
+        <p class="meta"><span>Kullanım alanı:</span> HTML, CSS ve JavaScript dosyalarını yazıp düzenlemek</p>
+      </li>
+
+      <li class="card">
+        <h2>Git</h2>
+        <p>Dosyalarınızın değişiklik geçmişini tutan ve farklı sürümlere dönmenizi sağlayan bir sürüm kontrol sistemidir.</p>
+        <p class="meta"><span>Kategori:</span> Sürüm kontrolü</p>
+        <p class="meta"><span>Kullanım alanı:</span> Her değişikliği commit olarak kaydetmek</p>
+      </li>
+
+      <li class="card">
+        <h2>Figma</h2>
+        <p>Tarayıcı üzerinden çalışan, arayüz tasarımı ve prototip hazırlamak için kullanılan bir araçtır.</p>
+        <p class="meta"><span>Kategori:</span> Arayüz tasarımı</p>
+        <p class="meta"><span>Kullanım alanı:</span> Bir web sayfasının yerleşimini kodlamadan önce çizmek</p>
+      </li>
+
+      <li class="card">
+        <h2>Postman</h2>
+        <p>Web servislerine istek gönderip yanıtları incelemek ve bu istekleri test etmek için kullanılan bir araçtır.</p>
+        <p class="meta"><span>Kategori:</span> API test aracı</p>
+        <p class="meta"><span>Kullanım alanı:</span> Bir veri adresine GET isteği gönderip dönen JSON yanıtını okumak</p>
+      </li>
+
+      <li class="card">
+        <h2>Trello</h2>
+        <p>Görevleri kartlar halinde sütunlara yerleştirerek ilerlemeyi takip etmeyi sağlayan bir proje yönetim panosudur.</p>
+        <p class="meta"><span>Kategori:</span> Proje yönetimi</p>
+        <p class="meta"><span>Kullanım alanı:</span> Bir ödevin yapılacaklar, yapılıyor ve tamamlandı listelerini tutmak</p>
+      </li>
+    </ul>
+
+    <section class="bilgi-kutusu">
+      <h2>Araçlar birlikte nasıl kullanılır?</h2>
+      <p>Küçük bir web sitesi yaparken bu araçlar genellikle sırayla kullanılır. Önce Figma ile sayfanın yerleşimini çizersiniz. Ardından Visual Studio Code içinde HTML, CSS ve JavaScript dosyalarını yazarsınız. Her çalışan aşamadan sonra Git ile bir commit kaydı oluşturursunuz. Sayfa bir veri servisi kullanıyorsa Postman ile istekleri deneyip yanıtları kontrol edersiniz. Bütün bu adımları ise Trello panosunda takip edebilirsiniz.</p>
+    </section>
+
+    <section class="bilgi-kutusu">
+      <h2>Kart bilgileri nasıl okunur?</h2>
+      <p><strong>Kategori</strong>, aracın hangi iş grubuna girdiğini gösterir. <strong>Kullanım alanı</strong> ise aracın gerçek bir görevde nasıl kullanılacağını anlatır. Bir aracı seçmeden önce bu iki bilgiye bakmak, o aracın ihtiyacınıza uyup uymadığını anlamanın en hızlı yoludur.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>BPR201 - İnternet Tabanlı Programlama · Haftalık Proje Ödevi 2</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
